@@ -1,0 +1,11 @@
+# custom key mapping:
+zoom_in Up k
+zoom_out Down j
+next_img Right l 
+prev_img Left h
+
+scroll_up K
+scroll_down J
+scroll_left H
+scroll_right L
+

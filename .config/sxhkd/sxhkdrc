@@ -1,0 +1,24 @@
+super + t
+	st
+
+super + v
+	st -e vim
+
+super + b
+	chromium
+
+super + {F12, F11, F9}
+	~/script/volume-control.sh {up, down, toggle}
+
+super + q
+	~/script/exit.sh
+
+super + z
+    setxkbmap {ara, us}
+
+super + f
+    st -e nnn
+
+super + p
+    {sudo simple-mtpfs -o allow_other --device 1 ~/mount/phone, sudo umount ~/mount/phone}
+

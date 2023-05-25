@@ -1,0 +1,17 @@
+#!/bin/bash 
+
+
+#network() {
+	conntype=$(ip route | awk '/default/ { print substr($5,1,1) }')
+	#if [ -z "$conntype" ]; then
+		#echo "Down"
+	if [ "$conntype" = "e" ]; then
+		echo -e "🌐 Connected "
+	elif [ "$conntype" = "w" ]; then
+		echo -e "🌐 Connected "
+	fi
+#}
+#echo -e " $(network) "
+
+#upt="$(uptime --pretty | sed -e 's/up //g' -e 's/ days/d/g' -e 's/ day/d/g' -e 's/ hours/h/g' -e 's/ hour/h/g' -e 's/ minutes/m/g' -e 's/, / /g')"
+#echo -e "$upt "

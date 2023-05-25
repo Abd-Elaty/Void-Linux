@@ -1,0 +1,2 @@
+# installation Void-Linux
+
