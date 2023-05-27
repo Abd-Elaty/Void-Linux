@@ -21,4 +21,6 @@ super + f
 
 super + p
     {sudo simple-mtpfs -o allow_other --device 1 ~/mount/phone, sudo umount ~/mount/phone}
+super + c
+    code-oss
 
