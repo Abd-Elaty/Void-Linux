@@ -43,7 +43,7 @@ Solve st window bug: https://dwm.suckless.org/faq/
 
 - To make it execute with start GUI (X window system) , put ( dwmblocks & ) in . xinitrc file
 
-# Packages i use it
+# Packages i use
 1. Install audio to your system: `sudo xbps-install alsa-utils` 
 
 2. **Sxhkd**:
