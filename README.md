@@ -46,7 +46,7 @@ Solve st window bug: https://dwm.suckless.org/faq/
 # Packages i use
 1. Install audio to your system: `sudo xbps-install alsa-utils` 
 
-2. **Sxhkd**:
+2. **Sxhkd**: `sudo xbps-install sxhkd`
     - Go to ` ~/.config/ ` directory
     - Make a new directory ` mkdir sxhkd `
     - Make the configuration file ` vim sxhkdrc ` 
