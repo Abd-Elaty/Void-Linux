@@ -122,13 +122,13 @@ https://linuxhandbook.com/sudo-without-password/
 2. To make clock work good, **edit time zone** open ` /etc/rc.conf ` file and change time zone to [ TIMEZONE=GMT+0 ] .
 - ` ls /usr/share/zoneinfo/ ` to view all zones
 
-3. You can change the default GRUB resolution, thereby resulting in larger fonts on the GRUB menu:
+3. You can **change the default GRUB resolution**, thereby resulting in larger fonts on the GRUB menu:
 - open the configuration: ` sudo vim /etc/default/grub `
 - edit ` GRUB_GFXMODE=800x600 ` entry to suit your resolution
 - ` sudo update-grub `
 
 
-4. To change tty font size:
+4. To **change tty font size**:
 - Install `terminus-font` package 
 - In `/etc/rc.conf` , set for example, ` FONT="ter-132n" `. The **"32"** refers to a height of 32px, whole the **"n"** refers to normal weight. There are many varieties in this package; ter-124b is 24px.
 - ` sudo update-grub `
