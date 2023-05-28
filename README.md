@@ -16,6 +16,9 @@ Install vim : ` xbps-install vim `
 Install x window system & dmenu & git : 
 ` xbps-install xorg dmenu git `
 
+Install a browser :
+` xbps-install chromium `
+
 Copy .xinitrc file to home directory:
 ` cp /etc/X11/xinit/xinitrc .xinitrc `
 
@@ -35,7 +38,7 @@ Dwm install : https://wiki.voidlinux.org/voidlinux_en_all_2021-04/A/Dwm_-
 
 Solve st window bug: https://dwm.suckless.org/faq/
 
-**Statusbar :** \
+**Statusbar :** 
 - The best way to do a statusbar is using `dwmblocks` package or `ststusts`, clone it and edit config file to execute your scripts, and make install it.
 
 - To make it execute with start GUI (X window system) , put ( dwmblocks & ) in . xinitrc file
@@ -71,6 +74,15 @@ https://github.com/jarun/nnn
 
 7. Install `zip` , `feh`
 
+8. Install a `nerd font` for **font icons** :
+https://bytexd.com/how-to-install-nerd-fonts-on-linux/
+
+Install noto font for **emojis**:
+` noto-fonts-emoji `
+
+For **mount phones** install :
+` simple-mtpfs `
+
 # Customization
 **Edit user & host in termminal :**
 
@@ -102,8 +114,27 @@ https://youtu.be/szvUAkBaw90
 **Execute sudo without Password:**
 https://linuxhandbook.com/sudo-without-password/
 
+
 # Tips and tricks
+1. **Show available languages :** `locale -a `
+- To change language : go to ` /etc/locale.conf ` and edit it .
+
+2. To make clock work good, **edit time zone** open ` /etc/rc.conf ` file and change time zone to [ TIMEZONE=GMT+0 ] .
+- ` ls /usr/share/zoneinfo/ ` to view all zones
+
+3. You can change the default GRUB resolution, thereby resulting in larger fonts on the GRUB menu:
+- open the configuration: ` sudo vim /etc/default/grub `
+- edit ` GRUB_GFXMODE=800x600 ` entry to suit your resolution
+- ` sudo update-grub `
 
 
+4. To change tty font size:
+- Install `terminus-font` package 
+- In `/etc/rc.conf` , set for example, ` FONT="ter-132n" `. The **"32"** refers to a height of 32px, whole the **"n"** refers to normal weight. There are many varieties in this package; ter-124b is 24px.
+- ` sudo update-grub `
 
+5. When compile a repo if you have **readline error**, you need to install ` readline-devel ` development libraries.
+
+# See this
+- http://eriklievaart.com/cheat/linux/
 
