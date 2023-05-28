@@ -130,7 +130,7 @@ https://linuxhandbook.com/sudo-without-password/
 
 4. To **change tty font size**:
 - Install `terminus-font` package 
-- In `/etc/rc.conf` , set for example, ` FONT="ter-132n" `. The **"32"** refers to a height of 32px, whole the **"n"** refers to normal weight. There are many varieties in this package; ter-124b is 24px.
+- In `/etc/rc.conf` , set for example, ` FONT="ter-132n" `. The `"32"` refers to a height of 32px, whole the `"n"` refers to normal weight. There are many varieties in this package; ter-124b is 24px.
 - ` sudo update-grub `
 
 5. When compile a repo if you have **readline error**, you need to install ` readline-devel ` development libraries.
