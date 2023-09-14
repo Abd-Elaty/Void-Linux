@@ -9,9 +9,9 @@ alias ls='ls --color=auto'
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-
+h
 # Prompt String 1
-PS1='\e[01;36m\]\w\e[00;90m\]$(parse_git_branch) \e[01m\e[38;5;166m> \e[00;37m\]'
+PS1='\[\033[01;36m\]\w\[\033[00;90m\]$(parse_git_branch) \[\033[01;38;5;166m\]> \[\033[00;37m\]'
 
 # NNN vars:
 export NNN_COLORS="6"
